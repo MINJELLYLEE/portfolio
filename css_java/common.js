@@ -126,14 +126,34 @@ window.addEventListener("scroll", function (e) {
   if (scrollTop >= 0 && scrollTop < ht * 1) {
     $move.style.cssText = `top:12vw; left:35vw;   transition: 0.5s;`;
   }
+  if (scrollTop >= 0 && scrollTop < ht * 1) {
+    $stone1.style.cssText = `opacity:1;   transition: 0.5s;`;
+    $stone2.style.cssText = `opacity:1;   transition: 0.5s;`;
+    $stone3.style.cssText = `opacity:1;   transition: 0.5s;`;
+  }
   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
-    $move.style.cssText = `top:calc(80vh - 5vw); left:calc(10vw - 5vw);   transition: 0.5s;`;
+    $move.style.cssText = `width:10vw; height:10vw; top:5vw; left:10vw; transition: 0.5s;`;
+  }
+  if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+    $stone1.style.cssText = `opacity:0; transition: 0.5s;`;
+    $stone2.style.cssText = `opacity:1; width:60%; transition: 0.2s;`;
+    $stone3.style.cssText = `opacity:0; transition: 0.5s;`;
   }
   if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
-    $move.style.cssText = `top:calc(10vh - 5vw); left:calc(20vw - 5vw);   transition: 0.5s;`;
+    $move.style.cssText = `width:10vw; height:10vw; top:0vw; left:3vw; transition: 0.5s;`;
+  }
+  if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+    $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
+    $stone2.style.cssText = `opacity : 0; transition: 0.5s;`;
+    $stone3.style.cssText = `opacity : 0;transition: 0.5s;`;
   }
   if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
-    $move.style.cssText = `top:calc(30vh - 5vw); left:calc(80vw - 5vw);   transition: 0.5s;`;
+    $move.style.cssText = `width:10vw; height:10vw; top:3vw; left:4vw; transition: 0.5s;`;
+  }
+  if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+    $stone1.style.cssText = `opacity : 0;transition: 0.5s;`;
+    $stone2.style.cssText = `opacity : 0;transition: 0.5s;`;
+    $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:80%;transition: 0.2s;`;
   }
 
   elm.forEach((item2, i) => {
