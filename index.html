@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
@@ -47,23 +47,23 @@
         </div>
       </div>
       <ul class="nav">
-        <li><a href="#sec1">Main</a></li>
+        <li class="on"><a href="#sec1">Main</a></li>
         <li><a href="#sec2">About me</a></li>
         <li><a href="#sec3">Portfolio</a></li>
         <li><a href="#sec4">Contact me</a></li>
       </ul>
 
       <div class="sec1_wrap">
-        <section id="sec1" class="sec1">
+        <section id="sec1" class="section">
           <h1>
-            <p ref="s1">단단하게</p>
-            <p ref="s2">끈기있게</p>
-            <p ref="s3">성실하게</p>
-            <p ref="s4">옥돌처럼 빛나는 웹 디자이너 이민정입니다.</p>
+            <p>단단하게</p>
+            <p>끈기있게</p>
+            <p>성실하게</p>
+            <p>옥돌처럼 빛나는 웹 디자이너 이민정입니다.</p>
           </h1>
         </section>
       </div>
-      <section id="sec2" class="sec2">
+      <section id="sec2" class="section">
         <!-- sec2는 h1만 position relative주고 나머지는 다
             position absolute로 위치 정하기 가능 -->
         <div class="inner_con">
@@ -155,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section id="sec3" class="sec3">
+      <section id="sec3" class="section">
         <div class="inner_con">
           <h1>Portfolio</h1>
           <div class="swiper slide1">
@@ -241,7 +241,7 @@
           </div>
         </div>
       </section>
-      <section id="sec4" class="sec4">
+      <section id="sec4" class="section">
         <div class="inner_con">
           <h1>Contact me</h1>
           <div class="sec4_con">
@@ -269,5 +269,7 @@
         </div>
       </section>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
