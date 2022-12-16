@@ -1,71 +1,22 @@
-// 슬라이드 하나씩 덕덕
-// const elm = document.querySelectorAll(".section");
-// const elmCount = elm.length;
-
-// elm.forEach((item, idx) => {
-//   item.addEventListener("mousewheel", function (e) {
-//     console.log(e);
-//     e.preventDefault();
-//     let delta = 0;
-//     if (e.wheelDelta) {
-//       delta = e.wheelDelta;
-//     }
-
-//     let moveTop = window.scrollY;
-//     let elmSelector = elm[idx];
-
-//     console.log(moveTop);
-
-//     // 휠을 내렸을 때
-//     if (delta < 0) {
-//       if (elmSelector !== elmCount - 1) {
-//         try {
-//           moveTop =
-//             window.pageYOffset +
-//             elmSelector.nextElementSibling.getBoundingClientRect().top;
-//         } catch (e) {}
-//       }
-//     } else {
-//       // 휠을 올렸을 때 +
-//       if (elmSelector !== 0) {
-//         try {
-//           moveTop =
-//             window.pageYOffset +
-//             elmSelector.previousElementSibling.getBoundingClientRect().top;
-//         } catch (e) {}
-//       }
-//     }
-//     window.scrollTo({ top: moveTop });
-//   });
-// });
-
-// window.addEventListener("scroll", function (e) {
-//   const $nav = document.querySelector(".nav");
-
-//   let scrollTop =
-//     document.documentElement.scrollTop ||
-//     window.scrollY ||
-//     this.window.pageYOffset;
-//   console.log(scrollTop);
-//   let ht = document.querySelector(".section").clientHeight;
-
-//   if (scrollTop > 100) {
-//     $nav.classList.add("on");
-//   } else {
-//     $nav.classList.remove("on");
-//   }
-
-//   elm.forEach((item2, i) => {
-//     if (scrollTop >= item2.offsetTop - 5) {
-//       document.querySelectorAll(".nav li").forEach((li) => {
-//         li.classList.remove("on");
-//       });
-//       document
-//         .querySelector(".nav li:nth-child(" + (i + 1) + ")")
-//         .classList.add("on");
-//     }
-//   });
-// });
+// 멘트등장
+let num = 1;
+document.querySelectorAll("#sec1>h1>p").forEach((el) => {
+  // 각 엘리먼트의 animation-delay를 0.5, 1.0, 1.5 ~ 차례로 준다.
+  el.style.setProperty("animation-delay", `${num}s`);
+  num += 1;
+});
+let num1 = 4.5;
+document.querySelectorAll("#sec1>h1").forEach((el) => {
+  // 각 엘리먼트의 animation-delay를 0.5, 1.0, 1.5 ~ 차례로 준다.
+  el.style.setProperty("animation-delay", `${num1}s`);
+  num1 += 4.5;
+});
+let num2 = 5;
+document.querySelectorAll("#sec1>div").forEach((el) => {
+  // 각 엘리먼트의 animation-delay를 0.5, 1.0, 1.5 ~ 차례로 준다.
+  el.style.setProperty("animation-delay", `${num2}s`);
+  num2 += 5;
+});
 
 // 슬라이드 한번에 한 섹션씩
 
@@ -127,33 +78,33 @@ window.addEventListener("scroll", function (e) {
     $move.style.cssText = `top:12vw; left:35vw;   transition: 0.5s;`;
   }
   if (scrollTop >= 0 && scrollTop < ht * 1) {
-    $stone1.style.cssText = `opacity:1;   transition: 0.5s;`;
-    $stone2.style.cssText = `opacity:1;   transition: 0.5s;`;
-    $stone3.style.cssText = `opacity:1;   transition: 0.5s;`;
+    $stone1.style.cssText = `opacity:1;   transition: 0.2s;`;
+    $stone2.style.cssText = `opacity:1;   transition: 0.2s;`;
+    $stone3.style.cssText = `opacity:1;   transition: 0.2s;`;
   }
   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
     $move.style.cssText = `width:10vw; height:10vw; top:5vw; left:10vw; transition: 0.5s;`;
   }
   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
-    $stone1.style.cssText = `opacity:0; transition: 0.5s;`;
+    $stone1.style.cssText = `opacity:0; transition: 0.15s;`;
     $stone2.style.cssText = `opacity:1; width:60%; transition: 0.2s;`;
-    $stone3.style.cssText = `opacity:0; transition: 0.5s;`;
+    $stone3.style.cssText = `opacity:0; transition: 0.15s;`;
   }
   if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
     $move.style.cssText = `width:10vw; height:10vw; top:0vw; left:3vw; transition: 0.5s;`;
   }
   if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
     $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
-    $stone2.style.cssText = `opacity : 0; transition: 0.5s;`;
-    $stone3.style.cssText = `opacity : 0;transition: 0.5s;`;
+    $stone2.style.cssText = `opacity : 0; transition: 0.15s;`;
+    $stone3.style.cssText = `opacity : 0;transition: 0.15s;`;
   }
   if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
     $move.style.cssText = `width:10vw; height:10vw; top:3vw; left:4vw; transition: 0.5s;`;
   }
   if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
-    $stone1.style.cssText = `opacity : 0;transition: 0.5s;`;
-    $stone2.style.cssText = `opacity : 0;transition: 0.5s;`;
-    $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:80%;transition: 0.2s;`;
+    $stone1.style.cssText = `opacity : 0;transition: 0.15s;`;
+    $stone2.style.cssText = `opacity : 0;transition: 0.15s;`;
+    $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:80%;transition: 0.2s; `;
   }
 
   elm.forEach((item2, i) => {
@@ -183,6 +134,7 @@ $(function () {
 var swiper = new Swiper(".slide1", {
   pagination: {
     el: ".pg1",
+    clickable: true,
   },
   loop: true,
   loopAdditionalSlides: 1,

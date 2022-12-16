@@ -17,7 +17,7 @@ html {
   --font3: white;
 }
 .wrap {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .inner_con {
   max-width: 1400px;
@@ -107,7 +107,8 @@ width 100% height 100vh의 고정값을 줍니다. */
   z-index: 1;
 }
 
-#sec1 h1 p {
+#sec1 h1 p,
+#sec1 div {
   /* border: 1px solid green; */
 
   text-align: center;
@@ -120,8 +121,16 @@ width 100% height 100vh의 고정값을 줍니다. */
   color: var(--main2);
 }
 
-#sec1 h1 p:nth-of-type(4) {
-  display: none;
+#sec1 div {
+  /* display: none; */
+  /* border: 1px solid blue; */
+  position: relative;
+  z-index: 1;
+
+  top: -30%;
+}
+#sec1 div span {
+  color: var(--main2);
 }
 
 /* sec1 end */
@@ -290,15 +299,14 @@ width 100% height 100vh의 고정값을 줍니다. */
   padding-top: 5%;
   background-color: var(--bg);
 }
-
+#sec3 .inner_con {
+  position: relative;
+}
 #sec3 .inner_con h1 {
   color: var(--main1);
   font-size: 50px;
   position: relative;
   z-index: 1;
-}
-.swiper-slide .sec3_con {
-  display: flex;
 }
 
 .swiper-slide div img {
@@ -315,6 +323,7 @@ width 100% height 100vh의 고정값을 줍니다. */
 }
 .sec3_con {
   position: relative;
+  /* border: 1px solid blue; */
 }
 .sec3_right {
   background-color: white;
@@ -440,6 +449,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   font-size: 25px;
   text-align: center;
   position: relative;
+  z-index: 100;
   /* border: 1px solid blue; */
 }
 
@@ -460,34 +470,231 @@ width 100% height 100vh의 고정값을 줍니다. */
   padding-top: 20%;
 }
 
-.email span:nth-of-type(1)::before {
+.email span:nth-of-type(2)::before {
   content: "";
   background: url(../img/옥돌1.png);
   background-size: cover;
   position: absolute;
   width: 130px;
   height: 130px;
-  top: -45px;
+  /* top: -45px; */
+  top: 1.5rem;
 }
-.kakao span:nth-of-type(1)::before {
+.kakao span:nth-of-type(2)::before {
   content: "";
   background: url(../img/옥돌2.png);
   background-size: cover;
   position: absolute;
   width: 180px;
   height: 180px;
-  top: -60px;
-  left: 20px;
+  /* top: -60px; */
+  top: 0.5rem;
+  left: 45%;
 }
-.github span:nth-of-type(1)::before {
+.github span:nth-of-type(2)::before {
   content: "";
   background: url(../img/옥돌4.png);
   background-size: cover;
   position: absolute;
   width: 130px;
   height: 130px;
-  top: -30px;
-  left: 20px;
+  /* top: -30px; */
+  top: 1.5rem;
+
+  /* left: 20px; */
+  right: 27%;
 }
 
 /* sec4 end */
+
+@media (max-width: 600px) {
+  /* nav start */
+  .nav {
+    /* border: 1px solid red; */
+    right: 0;
+  }
+  .nav li a {
+    /* border: 1px solid blue; */
+    font-size: 16px;
+  }
+  /* nav end */
+
+  /* stone start */
+  .stone {
+    margin-top: 50%;
+  }
+  .stone1 {
+    width: 50%;
+  }
+  .stone2 {
+    width: 50%;
+  }
+  .stone3 {
+    width: 70%;
+  }
+  /* stone end */
+
+  /* sec1 start */
+  #sec1 h1 {
+    /* border: 1px solid blue; */
+    top: 30%;
+  }
+  #sec1 div {
+    top: 17%;
+  }
+  /* sec1 end */
+
+  /* sec2 start */
+  #sec2 h1 {
+    font-size: 30px;
+  }
+  #sec2 .img img {
+    width: 50%;
+    margin-left: 10%;
+  }
+  #sec2 .btn {
+    /* border: 1px solid blue; */
+    right: 27%;
+    margin-top: 57%;
+  }
+  #sec2 .btn button {
+    margin-left: 1rem;
+    width: 100px;
+    height: 50px;
+  }
+  .con1 {
+    /* border: 1px solid blue; */
+    margin-top: 80%;
+    padding: 2rem;
+    width: 100%;
+    height: 40vh;
+    margin-left: 0;
+  }
+  .con1 p {
+    /* border: 2px solid red; */
+    font-size: 10px;
+  }
+
+  .sec2_con .con2 {
+    margin-top: 80%;
+    width: 100%;
+    /* height: 430px; */
+    height: 40vh;
+    margin-left: 0;
+  }
+
+  .con2 p {
+    /* border: 2px solid red; */
+    line-height: 1.5rem;
+    font-size: 10px;
+  }
+  .tec_list div img {
+    margin: 0 1rem;
+    width: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  #sec2 .inner_con {
+    /* border: 1px solid blue; */
+  }
+  /* sec2 end */
+
+  /* sec3 start */
+  #sec3 .inner_con h1 {
+    font-size: 30px;
+    /* border: 1px solid blue; */
+    padding-top: 10%;
+  }
+  .swiper-slide h3 {
+    font-size: 25px;
+  }
+  .swiper-slide div img {
+    margin-top: -30px;
+    margin-left: 15%;
+  }
+  .sec3_right {
+    /* border: 1px solid red; */
+    width: 90%;
+    top: 80%;
+  }
+  .swiper-slide {
+    /* border: 1px solid green; */
+    padding-bottom: 90%;
+  }
+  .sec3_btn {
+    /* border: 1px solid blue; */
+    /* top: 230%; */
+    margin-top: 83%;
+    right: 3.5rem;
+  }
+  .sec3_btn a {
+    width: 80px;
+    height: 50px;
+    font-size: 13px;
+  }
+  /* sec3 end */
+
+  /* sec4 start */
+  #sec4 h1 {
+    font-size: 30px;
+    padding-top: 10%;
+  }
+  .contact {
+    padding-top: 15%;
+    /* border: 1px solid blue; */
+  }
+  .contact h2 p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--font1);
+    line-height: 3rem;
+  }
+  .address {
+    padding-top: 3rem;
+  }
+  .address > p {
+    margin: 0 0.3rem;
+  }
+  .email span:nth-of-type(1),
+  .kakao span:nth-of-type(1),
+  .github span:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .email span:nth-of-type(2),
+  .kakao span:nth-of-type(2),
+  .github span:nth-of-type(2) {
+    width: 130px;
+    height: 80px;
+
+    font-size: 15px;
+    padding-top: 20%;
+  }
+  .email span:nth-of-type(2) {
+    padding-top: 13%;
+  }
+  .email span:nth-of-type(2)::before {
+    width: 100px;
+    height: 100px;
+    /* top: -45px; */
+    top: 0.5rem;
+  }
+  .kakao span:nth-of-type(2)::before {
+    width: 130px;
+    height: 130px;
+    /* top: -60px; */
+    top: 0;
+    left: 40%;
+  }
+  .github span:nth-of-type(2)::before {
+    width: 100px;
+    height: 100px;
+    /* top: -30px; */
+    top: 0.5rem;
+
+    /* left: 20px; */
+    right: 3%;
+  }
+  /* sec4 end */
+}
+@media (max-width: 800px) {
+}
