@@ -130,6 +130,12 @@ $(function () {
   });
 });
 
+// stone css
+if (window.matchMedia("(min-width: 600px)").matches) {
+  /* 뷰포트 너비가 400 픽셀 이상 */
+} else {
+  /* 뷰포트 너비가 400 픽셀 미만 */
+}
 // swiper
 var swiper = new Swiper(".slide1", {
   pagination: {

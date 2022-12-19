@@ -1,0 +1,120 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  --bg: #eaf2f1;
+  --main1: #6ec6ac;
+  --main2: #ff6767;
+  --font1: #2f2f2f;
+  --font2: #565656;
+  --font3: white;
+}
+body {
+  background-color: var(--bg);
+}
+.wrap {
+  /* overflow: hidden; */
+}
+.inner_con {
+  max-width: 1400px;
+  width: calc(100% - 4rem);
+  margin: auto;
+}
+/* 한 섹션의 크기는
+width:100%에 height:100vh로 고정합니다. */
+
+/* sec1 start */
+.sec1 {
+  /* border: 1px solid purple; */
+  width: 100%;
+  height: 100vh;
+}
+.sec1 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 50px;
+}
+.sec1 > p {
+  text-align: center;
+  font-size: 35px;
+  color: var(--font2);
+  padding-top: 1rem;
+}
+.sec1 .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.sec1_left img {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+.sec1_right {
+  /* border: 1px solid red; */
+  margin-right: 17%;
+}
+.sec1_text {
+  /* border: 1px solid green; */
+  width: 130%;
+  padding-top: 2rem;
+  color: var(--font1);
+}
+.sec1_right p:nth-of-type(2) {
+  padding: 2rem 0;
+}
+
+.sec1_btn {
+  /* border: 1px solid blue; */
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: -25%;
+}
+.sec1_btn a {
+  /* border: 1px solid red; */
+  margin: 0 1rem;
+  background-color: white;
+  width: 150px;
+  height: 70px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.sec1_btn a p {
+  /* border: 1px solid blue; */
+  margin-top: 0.6rem;
+}
+.sec1_btn a:hover {
+  background-color: var(--main2);
+  color: var(--font3);
+}
+/* sec1 end */
+
+/* sec2 start */
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid purple;
+}
+
+.sec2 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 50px;
+}
+.sec2 .goal1 {
+  border: 1px solid blue;
+}
+/* sec2 end */
+
+.sec3 {
+  display: none;
+}
