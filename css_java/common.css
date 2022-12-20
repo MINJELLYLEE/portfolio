@@ -522,17 +522,22 @@ width 100% height 100vh의 고정값을 줍니다. */
   /* nav end */
 
   /* stone start */
+
   .stone {
-    margin-top: 50%;
-    width: 15vw;
+    margin-top: 60%;
+    width: 50vw;
+    height: 50vw;
   }
   .stone1 {
-    width: 100%;
+    width: 70%;
+    top: 55%;
+    right: 30%;
   }
   .stone2 {
-    width: 100%;
+    width: 50%;
   }
   .stone3 {
+    top: 25%;
     width: 100%;
   }
   /* stone end */
@@ -550,7 +555,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   /* sec2 start */
   #sec2 h1 {
     /* border: 1px solid blue; */
-    margin-top: 1.5rem;
+    margin-top: 15%;
     font-size: 30px;
   }
   #sec2 .img img {
@@ -627,13 +632,19 @@ width 100% height 100vh의 고정값을 줍니다. */
   #sec3 .inner_con h1 {
     font-size: 30px;
     /* border: 1px solid blue; */
-    padding-top: 10%;
+    padding-top: 20%;
+  }
+  .swiper-slide {
+    /* border: 1px solid blue; */
+    margin-top: 10%;
   }
   .swiper-slide h3 {
-    font-size: 19px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 0;
   }
   .swiper-slide div img {
-    margin-top: -30px;
+    margin-top: -10px;
     margin-left: 15%;
   }
   .sec3_right {
@@ -644,22 +655,24 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .swiper-slide {
     /* border: 1px solid green; */
-    padding-bottom: 90%;
+    padding-bottom: 100%;
   }
   .sec3_right p:nth-of-type(1) {
-    padding-top: 1.5rem;
-    font-size: 18px;
+    padding-top: 2rem;
+    font-size: 16px;
   }
   .sec3_right p:nth-of-type(2) {
+    /* border: 1px solid blue; */
     line-height: 1.5rem;
     margin-top: 0.5rem;
-    margin-left: 25%;
+    margin-left: 20%;
+    font-size: 14px;
   }
   .sec3_btn {
     /* border: 1px solid blue; */
     /* top: 230%; */
-    margin-top: 75%;
-    right: 2.5rem;
+    margin-top: 85%;
+    right: 2.3rem;
   }
   .sec3_btn a {
     width: 80px;
@@ -676,7 +689,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   /* sec4 start */
   #sec4 h1 {
     font-size: 30px;
-    padding-top: 10%;
+    padding-top: 20%;
   }
   .sec4_con {
     margin-top: 15%;
@@ -686,7 +699,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     /* border: 1px solid blue; */
   }
   .contact h2 {
-    padding-top: 0;
+    /* padding-top: 0; */
   }
   .contact h2 p {
     text-align: center;
@@ -708,8 +721,8 @@ width 100% height 100vh의 고정값을 줍니다. */
   .email span:nth-of-type(2),
   .kakao span:nth-of-type(2),
   .github span:nth-of-type(2) {
-    width: 95px;
-    height: 70px;
+    width: 85px;
+    height: 65px;
     font-size: 13px;
     padding-top: 25%;
   }

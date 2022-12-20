@@ -52,6 +52,7 @@ $(window).on("wheel", function (e) {
   $html.animate({ scrollTop: posTop }, 100);
 });
 
+// 해당 섹션의 해당 nav 메뉴 + 돌 움직이기
 window.addEventListener("scroll", function (e) {
   const $nav = document.querySelector(".nav");
   const elm = document.querySelectorAll(".section");
@@ -76,35 +77,43 @@ window.addEventListener("scroll", function (e) {
 
   if (scrollTop >= 0 && scrollTop < ht * 1) {
     $move.style.cssText = `top:12vw; left:35vw;   transition: 0.5s;`;
-  }
-  if (scrollTop >= 0 && scrollTop < ht * 1) {
     $stone1.style.cssText = `opacity:1;   transition: 0.2s;`;
     $stone2.style.cssText = `opacity:1;   transition: 0.2s;`;
     $stone3.style.cssText = `opacity:1;   transition: 0.2s;`;
   }
   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
     $move.style.cssText = `width:10vw; height:10vw; top:5vw; left:10vw; transition: 0.5s;`;
-  }
-  if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
     $stone1.style.cssText = `opacity:0; transition: 0.15s;`;
     $stone2.style.cssText = `opacity:1; width:60%; transition: 0.2s;`;
     $stone3.style.cssText = `opacity:0; transition: 0.15s;`;
   }
   if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
     $move.style.cssText = `width:10vw; height:10vw; top:0vw; left:3vw; transition: 0.5s;`;
-  }
-  if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
     $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
     $stone2.style.cssText = `opacity : 0; transition: 0.15s;`;
     $stone3.style.cssText = `opacity : 0;transition: 0.15s;`;
   }
   if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
     $move.style.cssText = `width:10vw; height:10vw; top:3vw; left:4vw; transition: 0.5s;`;
-  }
-  if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
     $stone1.style.cssText = `opacity : 0;transition: 0.15s;`;
     $stone2.style.cssText = `opacity : 0;transition: 0.15s;`;
     $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:80%;transition: 0.2s; `;
+  }
+
+  // 돌 미디어쿼리
+  if (window.matchMedia("screen and (max-width:360px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-42vw; left:0vw; transition: 0.5s;`;
+      $stone2.style.cssText = `opacity:1; width:40%; transition: 0.2s;`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:40vw; transition: 0.5s;`;
+      $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-48vw; left:-10vw; transition: 0.5s;`;
+      $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:70%;transition: 0.2s; `;
+    }
   }
 
   elm.forEach((item2, i) => {
@@ -130,12 +139,8 @@ $(function () {
   });
 });
 
-// stone css
-if (window.matchMedia("(min-width: 600px)").matches) {
-  /* 뷰포트 너비가 400 픽셀 이상 */
-} else {
-  /* 뷰포트 너비가 400 픽셀 미만 */
-}
+// stone media query
+
 // swiper
 var swiper = new Swiper(".slide1", {
   pagination: {
