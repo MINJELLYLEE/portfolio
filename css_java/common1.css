@@ -206,7 +206,7 @@ width:100%에 height:100vh로 고정합니다. */
   /* border: 1px solid red; */
   position: absolute;
   right: 5%;
-  top: 30%;
+  top: 20%;
 }
 .sec3_btn button {
   display: block;
@@ -244,20 +244,28 @@ width:100%에 height:100vh로 고정합니다. */
   background-color: var(--main2);
   color: var(--font3);
 }
+.sec3_con > article {
+  display: none;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.sec3_con article.on {
+  display: block;
+}
 
-.sec3_con .main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sec3_con article .pc img {
+  margin-top: 5%;
+  position: absolute;
+  width: 50%;
+  margin-left: 5%;
 }
-.sec3_con .main .pc img {
-  width: 70%;
-  margin-left: 8%;
-}
-.sec3_con .main .mobile img {
-  width: 70%;
-  margin-top: 50%;
-  margin-left: -80%;
+.sec3_con article .mobile img {
+  position: absolute;
+  height: 150vh;
+  right: 25%;
+  margin-top: 5%;
+
+  /* margin-left: -80%; */
 }
 
 /* sec3 end */
