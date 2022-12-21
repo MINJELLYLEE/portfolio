@@ -1,0 +1,269 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  --bg: #eaf2f1;
+  --main1: #6ec6ac;
+  --main2: #ff6767;
+  --font1: #2f2f2f;
+  --font2: #565656;
+  --font3: white;
+}
+body {
+  background-color: var(--bg);
+}
+.wrap {
+  /* overflow: hidden; */
+}
+.inner_con {
+  max-width: 1400px;
+  width: calc(100% - 4rem);
+  margin: auto;
+}
+/* 한 섹션의 크기는
+width:100%에 height:100vh로 고정합니다. */
+
+/* sec1 start */
+.sec1 {
+  /* border: 1px solid purple; */
+  width: 100%;
+  height: 100vh;
+}
+.sec1 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 50px;
+}
+.sec1 > p {
+  text-align: center;
+  font-size: 35px;
+  color: var(--font2);
+  padding-top: 1rem;
+}
+.sec1 .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.sec1_left img {
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+.sec1_right {
+  /* border: 1px solid red; */
+  margin-right: 17%;
+}
+.sec1_text {
+  /* border: 1px solid green; */
+  width: 130%;
+  padding-top: 2rem;
+  color: var(--font1);
+}
+.sec1_right p:nth-of-type(2) {
+  padding: 2rem 0;
+}
+
+.sec1_btn {
+  /* border: 1px solid blue; */
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: -25%;
+}
+.sec1_btn a {
+  /* border: 1px solid red; */
+  margin: 0 1rem;
+  background-color: white;
+  width: 150px;
+  height: 70px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.sec1_btn a p {
+  /* border: 1px solid blue; */
+  margin-top: 0.6rem;
+}
+.sec1_btn a:hover {
+  background-color: var(--main2);
+  color: var(--font3);
+}
+/* sec1 end */
+
+/* sec2 start */
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid purple; */
+}
+
+.sec2 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 50px;
+}
+.sec2 .goal {
+  /* border: 1px solid red; */
+  padding-top: 7rem;
+  position: relative;
+}
+.sec2 .goal > div {
+  /* border: 1px solid red; */
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 40vw;
+  height: 13vh;
+  border-radius: 20px;
+  margin: 1rem 0;
+  box-shadow: 0 5px #eaeaea;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.sec2 .goal1 {
+  /* border: 1px solid blue; */
+  left: 5%;
+  position: relative;
+  z-index: 1;
+}
+.sec2 .goal1 p {
+  /* border: 1px solid red; */
+  color: var(--font1);
+}
+.sec2 .goal2 {
+  /* border: 1px solid red; */
+  top: 30vh;
+  right: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+.sec2 .goal3 {
+  top: 50vh;
+  left: 5%;
+  position: relative;
+  z-index: 1;
+}
+.sec2 .goal1::before {
+  content: "";
+  background: url(../img/옥돌1.png);
+  position: absolute;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  top: -50%;
+  left: 10%;
+  z-index: -1;
+}
+.sec2 .goal2::before {
+  content: "";
+  background: url(../img/옥돌2-1.png);
+  position: absolute;
+  background-size: cover;
+  width: 130px;
+  height: 120px;
+  top: -55%;
+  right: 10%;
+  z-index: -1;
+}
+.sec2 .goal3::before {
+  content: "";
+  background: url(../img/옥돌4.png);
+  position: absolute;
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  top: -40%;
+  left: 15%;
+  z-index: -1;
+}
+
+/* sec2 end */
+
+/* sec3 start */
+.sec3 {
+  width: 100%;
+  height: 200vh;
+  /* border: 2px solid purple; */
+  position: relative;
+}
+.sec3 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 50px;
+}
+.sec3_btn {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+.sec3_btn button {
+  display: block;
+  margin: 1.5rem 0;
+  background-color: var(--font3);
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 70px;
+  font-size: 18px;
+  color: var(--main1);
+  transition: 0.3s;
+}
+.sec3_btn button:hover {
+  cursor: pointer;
+}
+.sec3_btn button.on {
+  background-color: var(--main2);
+  color: var(--font3);
+}
+
+.sec3_btn a {
+  display: inline-block;
+  background-color: var(--font3);
+  width: 150px;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: var(--main1);
+  text-align: center;
+  padding-top: 0.4rem;
+  transition: 0.3s;
+}
+.sec3_btn a:hover {
+  background-color: var(--main2);
+  color: var(--font3);
+}
+.sec3_con > article {
+  display: none;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.sec3_con article.on {
+  display: block;
+}
+
+.sec3_con article .pc img {
+  margin-top: 5%;
+  position: absolute;
+  width: 50%;
+  margin-left: 5%;
+}
+.sec3_con article .mobile img {
+  position: absolute;
+  height: 150vh;
+  right: 25%;
+  margin-top: 5%;
+
+  /* margin-left: -80%; */
+}
+
+/* sec3 end */
