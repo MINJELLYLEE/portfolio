@@ -353,7 +353,7 @@ width:100%에 height:100vh로 고정합니다. */
     top: -80%;
   }
   .sec1 h1 {
-    font-size: 30px;
+    font-size: 27px;
     padding-top: 10rem;
   }
   .sec1 > p {
@@ -388,8 +388,12 @@ width:100%에 height:100vh로 고정합니다. */
 
   /* sec2 start */
   .sec2 h1 {
-    padding-top: 70%;
+    padding-top: 80%;
     font-size: 30px;
+  }
+  .sec2 .goal {
+    /* border: 1px solid blue; */
+    top: -10%;
   }
   .sec2 .goal > div {
     font-size: 15px;
