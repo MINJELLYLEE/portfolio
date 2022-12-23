@@ -2,16 +2,36 @@
 html {
   scroll-behavior: smooth;
 }
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTTtangsbudaejjigaeB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "NanumSquareRound";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   --bg: #eaf2f1;
   --main1: #6ec6ac;
-  --main2: #ff6767;
+  --main2: #ee6060;
   --font1: #2f2f2f;
   --font2: #565656;
   --font3: white;
@@ -70,9 +90,10 @@ width:100%에 height:100vh로 고정합니다. */
 /* 돌아가기 버튼 끝 */
 
 .sec1 h1 {
+  font-family: "TTTtangsbudaejjigaeB";
   text-align: center;
   padding-top: 3rem;
-  font-size: 50px;
+  font-size: 45px;
 }
 .sec1 > p {
   text-align: center;
@@ -89,6 +110,7 @@ width:100%에 height:100vh로 고정합니다. */
 .sec1_left img {
   /* border: 1px solid blue; */
   width: 100%;
+  margin-top: -7%;
 }
 .sec1_right {
   /* border: 1px solid red; */
@@ -139,9 +161,10 @@ width:100%에 height:100vh로 고정합니다. */
 }
 
 .sec2 h1 {
+  font-family: "TTTtangsbudaejjigaeB";
   text-align: center;
   padding-top: 3rem;
-  font-size: 50px;
+  font-size: 45px;
 }
 .sec2 .goal {
   /* border: 1px solid red; */
@@ -246,9 +269,10 @@ width:100%에 height:100vh로 고정합니다. */
   position: relative;
 }
 .sec3 h1 {
+  font-family: "TTTtangsbudaejjigaeB";
   text-align: center;
   padding-top: 3rem;
-  font-size: 50px;
+  font-size: 45px;
 }
 .sec3_btn {
   /* border: 1px solid red; */
@@ -317,3 +341,114 @@ width:100%에 height:100vh로 고정합니다. */
 }
 
 /* sec3 end */
+
+@media (max-width: 600px) {
+  /* sec1 start */
+  .sec1 .goback {
+    font-size: 16px;
+    left: 10%;
+    margin-top: 15%;
+  }
+  .sec1 .goback::before {
+    top: -80%;
+  }
+  .sec1 h1 {
+    font-size: 30px;
+    padding-top: 10rem;
+  }
+  .sec1 > p {
+    font-size: 20px;
+  }
+  .sec1 .flex {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .sec1_right {
+    /* border: 1px solid red; */
+    margin-right: 0;
+    margin-left: 8%;
+  }
+  .sec1_text {
+    width: 90%;
+    padding-top: 0;
+    font-size: 13px;
+  }
+  .sec1_btn {
+    margin-right: 0;
+    margin-left: -2rem;
+  }
+  .sec1_btn a {
+    width: 120px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  /* sec1 end */
+
+  /* sec2 start */
+  .sec2 h1 {
+    padding-top: 70%;
+    font-size: 30px;
+  }
+  .sec2 .goal > div {
+    font-size: 15px;
+    width: 90vw;
+  }
+  .sec2 .goal1 {
+    left: 0;
+  }
+  .sec2 .goal2 {
+    right: 0;
+  }
+  .sec2 .goal3 {
+    top: 47vh;
+    left: 0;
+  }
+  .sec2 .goal3 p {
+    padding-top: 0.5rem;
+  }
+  .sec2 .goal1::before {
+    width: 120px;
+    height: 120px;
+  }
+  .sec2 .goal2::before {
+    width: 100px;
+    height: 100px;
+    top: -30%;
+  }
+  .sec2 .goal3::before {
+    width: 100px;
+    height: 100px;
+    top: -30%;
+    left: 5%;
+  }
+  /* sec2 end */
+
+  /* sec3 start */
+  .sec3 h1 {
+    padding-top: 30%;
+    font-size: 30px;
+  }
+  .sec3_btn button {
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
+  }
+  .sec3_btn a {
+    width: 120px;
+    height: 70px;
+    font-size: 16px;
+    padding-top: 0.5rem;
+  }
+  .sec3_con article .pc img {
+  }
+  .sec3_con article .mobile img {
+    height: 100vh;
+    margin-top: 100%;
+    right: 0;
+    left: 5%;
+  }
+
+  /* sec3 end */
+}

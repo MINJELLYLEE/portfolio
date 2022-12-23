@@ -2,16 +2,36 @@
 html {
   scroll-behavior: smooth;
 }
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTTtangsbudaejjigaeB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "NanumSquareRound";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   --bg: #eaf2f1;
   --main1: #6ec6ac;
-  --main2: #ff6767;
+  --main2: #ee6060;
   --font1: #2f2f2f;
   --font2: #565656;
   --font3: white;
@@ -36,9 +56,10 @@ html {
   z-index: 9999;
 }
 .nav li a {
+  font-family: "TTTtangsbudaejjigaeB";
   /* border: 1px solid green; */
   color: var(--main1);
-  font-size: 30px;
+  font-size: 25px;
   margin: 1rem;
   transition: 0.3s;
 }
@@ -110,7 +131,7 @@ width 100% height 100vh의 고정값을 줍니다. */
 #sec1 h1 p,
 #sec1 div {
   /* border: 1px solid green; */
-
+  font-family: "yg-jalnan";
   text-align: center;
   padding: 0.5rem;
   font-size: 4vw !important;
@@ -150,6 +171,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   color: var(--main1);
   font-size: 50px;
   z-index: 1;
+  font-family: "TTTtangsbudaejjigaeB";
 }
 #sec2 .img {
   position: relative;
@@ -199,14 +221,14 @@ width 100% height 100vh의 고정값을 줍니다. */
 .con1 p {
   /* border: 2px solid red; */
   font-size: 15px;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   color: var(--font2);
   text-indent: 1.5rem;
   position: relative;
   z-index: 1;
 }
 .con1 p:nth-of-type(1) {
-  padding-top: 5%;
+  padding-top: 7%;
 }
 .con1::before {
   content: "\f10d";
@@ -258,11 +280,17 @@ width 100% height 100vh의 고정값을 줍니다. */
   position: relative;
   z-index: 1;
 }
-.con2 .eng {
-  /* border: 1px solid red; */
+.con2 span {
+  /* border: 1px solid blue; */
   display: inline-block;
-  padding-left: 11%;
 }
+.con2 .major {
+  /* border: 1px solid blue; */
+  text-align: left;
+  display: inline-block;
+  margin-left: 20%;
+}
+
 .tec_con {
   /* border: 2px solid green; */
   padding-top: 1rem;
@@ -276,19 +304,13 @@ width 100% height 100vh의 고정값을 줍니다. */
 }
 .tec_list div img {
   /* border: 1px solid blue; */
-  margin: 0 1rem;
+  margin-top: -50%;
+  margin-left: 20%;
   width: 80px;
   position: relative;
   z-index: 1;
 }
-.tec_list p {
-  display: none;
-  border: 1px solid blue;
-  width: 150px;
-  font-size: 13px;
-  text-indent: 0;
-  text-align: left;
-}
+
 /* sec2 end */
 
 /* sec3 start */
@@ -303,6 +325,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   position: relative;
 }
 #sec3 .inner_con h1 {
+  font-family: "TTTtangsbudaejjigaeB";
   color: var(--main1);
   font-size: 50px;
   position: relative;
@@ -311,7 +334,7 @@ width 100% height 100vh의 고정값을 줍니다. */
 
 .swiper-slide div img {
   /* border: 1px solid red; */
-  margin-top: -100px;
+  margin-top: -160px;
   width: 70%;
 }
 .swiper-slide h3 {
@@ -355,7 +378,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   /* border: 1px solid red; */
   position: absolute;
   right: 4.5rem;
-  top: 55%;
+  top: 60%;
   display: flex;
 }
 .sec3_btn a {
@@ -400,6 +423,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   padding-top: 5%;
 }
 #sec4 h1 {
+  font-family: "TTTtangsbudaejjigaeB";
   color: var(--main1);
   font-size: 50px;
   position: relative;
@@ -510,15 +534,26 @@ width 100% height 100vh의 고정값을 줍니다. */
 @media (max-width: 600px) {
   /* nav start */
   .nav {
+    /* border: 1px solid red; */
     border-bottom: 1px solid var(--main2);
     display: flex;
-    right: 5%;
+    right: 0;
     top: 5%;
+  }
+  .nav li {
+    /* border: 1px solid red; */
   }
   .nav li a {
     /* border: 1px solid blue; */
-    font-size: 13px;
+    display: inline-block;
+    width: 90px;
+    font-size: 12px;
+    margin: 0;
   }
+  .nav li:nth-of-type(1) a {
+    text-align: center;
+  }
+
   /* nav end */
 
   /* stone start */
@@ -601,7 +636,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     /* height: 430px; */
     height: 40vh;
     margin-left: 0;
-    padding: 2.5rem 2rem 0;
+    padding: 2.5rem 0rem 0;
   }
   .con1::before,
   .con1::after {
@@ -612,6 +647,12 @@ width 100% height 100vh의 고정값을 줍니다. */
     line-height: 1.5rem;
     font-size: 10px;
     padding-top: 0;
+  }
+  .con2 .major {
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: inline-block;
+    margin-left: 32%;
   }
   .tec_con {
     /* border: 1px solid blue; */

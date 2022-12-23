@@ -107,11 +107,11 @@ window.addEventListener("scroll", function (e) {
       $stone2.style.cssText = `opacity:1; width:40%; transition: 0.2s;`;
     }
     if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
-      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:40vw; transition: 0.5s;`;
+      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:55vw; transition: 0.5s;`;
       $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
     }
     if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
-      $move.style.cssText = `width:30vw; height:30vw; top:-48vw; left:-10vw; transition: 0.5s;`;
+      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:-10vw; transition: 0.5s;`;
       $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:70%;transition: 0.2s; `;
     }
   }
