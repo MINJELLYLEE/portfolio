@@ -280,6 +280,7 @@ width:100%에 height:100vh로 고정합니다. */
   top: 20%;
 }
 .sec3_btn button {
+  font-family: "NanumSquareRound";
   display: block;
   margin: 1.5rem 0;
   background-color: var(--font3);
