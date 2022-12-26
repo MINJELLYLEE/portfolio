@@ -342,6 +342,131 @@ width:100%에 height:100vh로 고정합니다. */
 
 /* sec3 end */
 
+@media (max-width: 1600px) {
+  .sec2 .goal > div {
+    font-size: 20px;
+  }
+  .sec2 .goal1::before {
+    width: 120px;
+    height: 120px;
+  }
+  .sec2 .goal2::before {
+    width: 100px;
+    height: 100px;
+    top: -50%;
+  }
+  .sec2 .goal3::before {
+    width: 100px;
+    height: 100px;
+    top: -50%;
+    left: 5%;
+  }
+}
+@media (max-width: 1500px) {
+  .sec1 .goback {
+    font-size: 16px;
+    left: 5%;
+    margin-top: 10%;
+  }
+  .sec1 .goback::before {
+    top: -80%;
+  }
+}
+@media (max-width: 1000px) {
+  .sec1 .goback {
+    left: 10%;
+  }
+  .sec1 h1 {
+    font-size: 35px;
+    padding-top: 10rem;
+  }
+  .sec1 > p {
+    font-size: 25px;
+  }
+  .sec1 .flex {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .sec1_right {
+    /* border: 1px solid red; */
+    margin-right: 0;
+    margin-left: 8%;
+  }
+  .sec1_text {
+    width: 90%;
+    margin-top: -10%;
+    padding-top: 0;
+    font-size: 16px;
+  }
+  .sec1_btn {
+    margin-right: 10%;
+    margin-top: 5rem;
+  }
+  .sec2 h1 {
+    padding-top: 70%;
+    font-size: 35px;
+  }
+  .sec2 .goal {
+    top: 0;
+  }
+  .sec2 .goal > div {
+    font-size: 15px;
+  }
+  .sec2 .goal1::before {
+    width: 120px;
+    height: 120px;
+  }
+  .sec2 .goal2::before {
+    width: 100px;
+    height: 100px;
+    top: -50%;
+  }
+  .sec2 .goal3::before {
+    width: 100px;
+    height: 100px;
+    top: -50%;
+    left: 5%;
+  }
+
+  .sec3 h1 {
+    padding-top: 70%;
+    font-size: 35px;
+  }
+  .sec3_btn {
+    left: 0%;
+    display: flex;
+    top: 49%;
+  }
+  .sec3_btn button {
+    /* border: 1px solid blue; */
+    margin: 0 0.5rem;
+    font-size: 16px;
+    width: 110px;
+    height: 60px;
+  }
+  .sec3_btn a {
+    width: 110px;
+    height: 60px;
+    font-size: 16px;
+    padding-top: 0.4rem;
+    margin-top: 0rem;
+  }
+  .sec3_con article .pc img {
+    margin-top: 30%;
+    width: 100%;
+    left: -5%;
+  }
+  .sec3_con article .mobile img {
+    margin-top: 170%;
+
+    right: 40%;
+  }
+  .sec3_con .sub .mobile img {
+    /* border: 1px solid blue; */
+    margin-top: 195%;
+    right: 43%;
+  }
+}
 @media (max-width: 600px) {
   /* sec1 start */
   .sec1 .goback {
@@ -388,15 +513,18 @@ width:100%에 height:100vh로 고정합니다. */
 
   /* sec2 start */
   .sec2 h1 {
-    padding-top: 80%;
+    /* border: 1px solid red; */
+    margin-top: 60%;
+    padding-top: 10%;
     font-size: 30px;
   }
   .sec2 .goal {
     /* border: 1px solid blue; */
-    top: -10%;
+    margin-top: -20%;
   }
   .sec2 .goal > div {
-    font-size: 15px;
+    /* border: 1px solid blue; */
+    font-size: 15px !important;
     width: 90vw;
   }
   .sec2 .goal1 {
@@ -410,7 +538,7 @@ width:100%에 height:100vh로 고정합니다. */
     left: 0;
   }
   .sec2 .goal3 p {
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
   }
   .sec2 .goal1::before {
     width: 120px;
@@ -431,27 +559,49 @@ width:100%에 height:100vh로 고정합니다. */
 
   /* sec3 start */
   .sec3 h1 {
+    margin-top: -50%;
     padding-top: 30%;
     font-size: 30px;
   }
+  .sec3_btn {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    top: 15%;
+    left: 15%;
+  }
   .sec3_btn button {
+    /* border: 1px solid blue; */
+    margin: 0 0.5rem;
     font-size: 16px;
-    width: 120px;
+    width: 95px;
     height: 50px;
   }
+  .sec3_btn button:nth-of-type(2) {
+    margin-right: 1rem;
+    border: 1px solid;
+  }
   .sec3_btn a {
-    width: 120px;
-    height: 70px;
-    font-size: 16px;
-    padding-top: 0.5rem;
+    width: 95px;
+    height: 50px;
+    font-size: 13px;
+    padding-top: 0.3rem;
+    margin-top: 0rem;
   }
   .sec3_con article .pc img {
+    margin-top: 30%;
+    width: 100%;
+    left: -5%;
   }
   .sec3_con article .mobile img {
-    height: 100vh;
-    margin-top: 100%;
-    right: 0;
-    left: 5%;
+    margin-top: 190%;
+
+    right: 27%;
+  }
+  .sec3_con .sub .mobile img {
+    /* border: 1px solid blue; */
+    margin-top: 210%;
+    right: 35%;
   }
 
   /* sec3 end */
