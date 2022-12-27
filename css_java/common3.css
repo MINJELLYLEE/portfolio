@@ -429,9 +429,9 @@ width:100%에 height:100vh로 고정합니다. */
     font-size: 35px;
   }
   .sec3_btn {
-    left: 0%;
+    left: 25%;
     display: flex;
-    top: 49%;
+    top: 45%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */
@@ -567,9 +567,9 @@ width:100%에 height:100vh로 고정합니다. */
     font-size: 30px;
   }
   .sec3_btn {
-    left: 4%;
+    left: 15%;
     display: flex;
-    top: 12%;
+    top: 15%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */

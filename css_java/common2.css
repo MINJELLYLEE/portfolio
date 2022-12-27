@@ -428,13 +428,13 @@ width:100%에 height:100vh로 고정합니다. */
   }
 
   .sec3 h1 {
-    padding-top: 70%;
+    padding-top: 80%;
     font-size: 35px;
   }
   .sec3_btn {
-    left: 0%;
+    left: 32%;
     display: flex;
-    top: 49%;
+    top: 60%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */
@@ -466,6 +466,13 @@ width:100%에 height:100vh로 고정합니다. */
     right: 43%;
   }
 }
+@media (max-width: 800px) {
+  .sec3_btn {
+    left: 23%;
+    top: 42%;
+  }
+}
+
 @media (max-width: 600px) {
   /* sec1 start */
   .sec1 .goback {
@@ -565,9 +572,9 @@ width:100%에 height:100vh로 고정합니다. */
     font-size: 30px;
   }
   .sec3_btn {
-    left: 4%;
+    left: 15%;
     display: flex;
-    top: 12%;
+    top: 15%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */

@@ -148,7 +148,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   position: relative;
   z-index: 1;
 
-  top: -30%;
+  top: -35%;
 }
 #sec1 div span {
   color: var(--main2);
@@ -526,11 +526,153 @@ width 100% height 100vh의 고정값을 줍니다. */
   top: 1.5rem;
 
   /* left: 20px; */
-  right: 27%;
+  left: 65%;
 }
 
 /* sec4 end */
+@media (max-width: 1500px) {
+  #sec1 div {
+    top: -20%;
+  }
+  #sec2 .img {
+    left: 10%;
+    margin-top: 3.5%;
+  }
+  #sec2 .btn {
+    position: absolute;
+    right: 21%;
+  }
+  .con1 {
+    margin-left: 33%;
+  }
+  .sec2_con .con2 {
+    margin-left: 33%;
+  }
+  .github span:nth-of-type(2)::before {
+    top: 1.5rem;
 
+    /* left: 20px; */
+    left: 65%;
+  }
+}
+@media (max-width: 1300px) {
+  .stone1 {
+    width: 50%;
+    top: 35%;
+    right: 30%;
+  }
+  .stone2 {
+    top: 10%;
+    width: 50%;
+  }
+  .stone3 {
+    top: 60%;
+    width: 70%;
+  }
+  #sec2 .img img {
+    margin-top: 4%;
+    width: 30%;
+    border-radius: 20px;
+  }
+  .con1 {
+    margin-top: 8%;
+    margin-left: 40%;
+    width: 55%;
+    height: 53vh;
+  }
+  .con1 p {
+    /* border: 2px solid red; */
+    font-size: 14px;
+  }
+  .sec2_con .con2 {
+    margin-top: 8%;
+    margin-left: 40%;
+  }
+  #sec2 .btn {
+    position: absolute;
+    right: 8%;
+  }
+}
+@media (max-width: 1200px) {
+  .nav {
+    /* border: 1px solid red; */
+    border-bottom: 1px solid var(--main2);
+    display: flex;
+    right: 0;
+    top: 5%;
+  }
+  .nav li {
+    /* border: 1px solid red; */
+  }
+  .nav li a {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    margin: 0;
+  }
+  .nav li:nth-of-type(1) a {
+    text-align: center;
+  }
+  #sec3 .inner_con h1 {
+    font-size: 30px;
+    /* border: 1px solid blue; */
+    padding-top: 0%;
+  }
+  .swiper-slide {
+    /* border: 1px solid blue; */
+    margin-top: 0%;
+  }
+  .swiper-slide h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5%;
+  }
+  .swiper-slide div img {
+    margin-top: -50px;
+    margin-left: 0%;
+  }
+  .sec3_right {
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 40%;
+    top: 20%;
+  }
+  .swiper-slide {
+    /* border: 1px solid green; */
+    padding-bottom: 100%;
+  }
+  .sec3_right p:nth-of-type(1) {
+    padding-top: 2rem;
+    font-size: 16px;
+  }
+  .sec3_right p:nth-of-type(2) {
+    /* border: 1px solid blue; */
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 20%;
+    font-size: 14px;
+  }
+  .sec3_btn {
+    /* border: 1px solid blue; */
+    /* top: 230%; */
+    margin-top: 1%;
+    right: 5rem;
+  }
+  .sec3_btn a {
+    width: 80px;
+    height: 50px;
+    font-size: 13px;
+    margin: 0.5rem;
+  }
+  .pg1 {
+    /* border: 1px solid red; */
+    top: 33%;
+  }
+  .github span:nth-of-type(2)::before {
+    left: 73%;
+  }
+}
 @media (max-width: 600px) {
   /* nav start */
   .nav {
@@ -595,12 +737,12 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   #sec2 .img img {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 20%;
   }
   #sec2 .btn {
     /* border: 1px solid blue; */
     right: 23%;
-    margin-top: 57%;
+    margin-top: 70%;
   }
   #sec2 .btn button {
     margin-left: 1rem;
@@ -609,7 +751,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .con1 {
     /* border: 1px solid blue; */
-    margin-top: 90%;
+    margin-top: 105%;
     padding: 2rem;
     width: 100%;
     height: 40vh;
@@ -631,7 +773,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
 
   .sec2_con .con2 {
-    margin-top: 90%;
+    margin-top: 105%;
     width: 100%;
     /* height: 430px; */
     height: 40vh;
@@ -790,9 +932,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     top: 2.3rem;
 
     /* left: 20px; */
-    right: 3%;
+    left: 70%;
   }
   /* sec4 end */
-}
-@media (max-width: 800px) {
 }

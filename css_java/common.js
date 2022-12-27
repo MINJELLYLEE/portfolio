@@ -101,13 +101,33 @@ window.addEventListener("scroll", function (e) {
   }
 
   // 돌 미디어쿼리
-  if (window.matchMedia("screen and (max-width:360px)").matches) {
+  if (window.matchMedia("screen and (max-width:1700px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $move.style.cssText = `width:30vw; height:30vw; top:3vw; left:2vw; transition: 0.5s;`;
+      $stone2.style.cssText = `opacity:1; width:25%; transition: 0.2s;`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-20vw; left:0vw; transition: 0.5s;`;
+      $stone1.style.cssText = `opacity: 1; width:30%; transition: 0.2s;`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-6vw; left:-30vw; transition: 0.5s;`;
+      $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:30%;transition: 0.2s; `;
+    }
+  }
+  if (window.matchMedia("screen and (max-width:800px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-10vw; left:2vw; transition: 0.5s;`;
+      $stone2.style.cssText = `opacity:1; width:25%; transition: 0.2s;`;
+    }
+  }
+  if (window.matchMedia("screen and (max-width:600px)").matches) {
     if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
       $move.style.cssText = `width:30vw; height:30vw; top:-42vw; left:0vw; transition: 0.5s;`;
       $stone2.style.cssText = `opacity:1; width:40%; transition: 0.2s;`;
     }
     if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
-      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:55vw; transition: 0.5s;`;
+      $move.style.cssText = `width:30vw; height:30vw; top:-50vw; left:50vw; transition: 0.5s;`;
       $stone1.style.cssText = `opacity: 1; width:60%; transition: 0.2s;`;
     }
     if (scrollTop >= ht * 3 && scrollTop < ht * 4) {

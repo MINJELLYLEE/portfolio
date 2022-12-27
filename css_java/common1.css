@@ -40,7 +40,7 @@ body {
   background-color: var(--bg);
 }
 .wrap {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .inner_con {
   max-width: 1400px;
@@ -434,9 +434,9 @@ width:100%에 height:100vh로 고정합니다. */
     font-size: 35px;
   }
   .sec3_btn {
-    left: 0%;
+    left: 30%;
     display: flex;
-    top: 49%;
+    top: 51%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */
@@ -569,7 +569,7 @@ width:100%에 height:100vh로 고정합니다. */
     width: 100%;
     display: flex;
     top: 15%;
-    left: 3%;
+    left: 5%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */
