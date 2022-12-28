@@ -606,8 +606,8 @@ width:100%에 height:100vh로 고정합니다. */
   }
   .sec3_con .sub .mobile img {
     /* border: 1px solid blue; */
-    margin-top: 280%;
-    right: 35%;
+    margin-top: 240%;
+    right: 25%;
   }
 
   /* sec3 end */
