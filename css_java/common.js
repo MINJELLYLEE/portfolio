@@ -115,10 +115,14 @@ window.addEventListener("scroll", function (e) {
       $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:30%;transition: 0.2s; `;
     }
   }
-  if (window.matchMedia("screen and (max-width:800px)").matches) {
+  if (window.matchMedia("screen and (max-width:900px)").matches) {
     if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
       $move.style.cssText = `width:30vw; height:30vw; top:-10vw; left:2vw; transition: 0.5s;`;
       $stone2.style.cssText = `opacity:1; width:25%; transition: 0.2s;`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      $move.style.cssText = `width:30vw; height:30vw; top:-30vw; left:-10vw; transition: 0.5s;`;
+      $stone3.style.cssText = `opacity : 1; transform:rotate(30deg); width:50%;transition: 0.2s; `;
     }
   }
   if (window.matchMedia("screen and (max-width:600px)").matches) {
