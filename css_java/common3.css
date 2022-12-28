@@ -567,9 +567,10 @@ width:100%에 height:100vh로 고정합니다. */
     font-size: 30px;
   }
   .sec3_btn {
-    left: 15%;
+    width: 100%;
     display: flex;
     top: 15%;
+    left: 5%;
   }
   .sec3_btn button {
     /* border: 1px solid blue; */
@@ -590,7 +591,7 @@ width:100%에 height:100vh로 고정합니다. */
     margin-top: 0rem;
   }
   .sec3_con article .pc img {
-    margin-top: 30%;
+    margin-top: 35%;
     width: 100%;
     left: -5%;
   }
