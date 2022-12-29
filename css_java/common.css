@@ -539,14 +539,21 @@ width 100% height 100vh의 고정값을 줍니다. */
     margin-top: 3.5%;
   }
   #sec2 .btn {
+    /* border: 1px solid red; */
     position: absolute;
     right: 21%;
+    margin-top: -2%;
   }
   .con1 {
+    /* border: 1px solid red; */
+    height: 55vh;
+    margin-top: 4%;
     margin-left: 33%;
   }
   .sec2_con .con2 {
     margin-left: 33%;
+    margin-top: 4%;
+    height: 55vh;
   }
   .github span:nth-of-type(2)::before {
     top: 1.5rem;
@@ -578,7 +585,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     margin-top: 8%;
     margin-left: 40%;
     width: 55%;
-    height: 53vh;
+    height: 55vh;
   }
   .con1 p {
     /* border: 2px solid red; */
@@ -593,7 +600,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     right: 8%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .nav {
     /* border: 1px solid red; */
     border-bottom: 1px solid var(--main2);
@@ -614,6 +621,56 @@ width 100% height 100vh의 고정값을 줍니다. */
   .nav li:nth-of-type(1) a {
     text-align: center;
   }
+  .stone {
+    margin-top: 10%;
+  }
+  #sec1 h1 {
+    /* border: 1px solid blue; */
+    top: 15%;
+  }
+  #sec1 div {
+    top: -10%;
+  }
+  #sec2 .img img {
+    margin-top: 6.5%;
+  }
+  .con1 {
+    height: 40vh;
+    margin-top: 10%;
+  }
+  .sec2_con .con2 {
+    margin-top: 10%;
+
+    height: 40vh;
+  }
+  .con1 p {
+    font-size: 11px;
+  }
+  .con1 p:nth-of-type(1) {
+    margin-top: -10%;
+  }
+  .con2 p {
+    /* border: 2px solid red; */
+    line-height: 2rem;
+    font-size: 14px;
+    padding-top: 0rem;
+    margin-left: 0%;
+  }
+  .con2 .major {
+    text-align: left;
+    display: inline-block;
+    margin-left: 35%;
+  }
+  .tec_con {
+    padding-left: 40%;
+    margin-top: -10%;
+  }
+  .tec_list div img {
+    margin: 0 0rem;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+  }
   #sec3 .inner_con h1 {
     font-size: 30px;
     /* border: 1px solid blue; */
@@ -630,7 +687,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .swiper-slide div img {
     margin-top: -50px;
-    margin-left: 0%;
+    margin-left: 20%;
   }
   .sec3_right {
     /* border: 1px solid red; */
@@ -642,8 +699,14 @@ width 100% height 100vh의 고정값을 줍니다. */
     /* border: 1px solid green; */
     padding-bottom: 100%;
   }
+  .sec3_right {
+    width: 50%;
+    height: 40%;
+    top: 80%;
+    margin-right: 20%;
+  }
   .sec3_right p:nth-of-type(1) {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     font-size: 16px;
   }
   .sec3_right p:nth-of-type(2) {
@@ -656,8 +719,8 @@ width 100% height 100vh의 고정값을 줍니다. */
   .sec3_btn {
     /* border: 1px solid blue; */
     /* top: 230%; */
-    margin-top: 1%;
-    right: 5rem;
+    margin-top: 30%;
+    right: 15rem;
   }
   .sec3_btn a {
     width: 80px;
@@ -667,7 +730,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .pg1 {
     /* border: 1px solid red; */
-    top: 33%;
+    top: 50%;
   }
   .github span:nth-of-type(2)::before {
     left: 73%;
@@ -977,6 +1040,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     width: 85%;
     height: 100%;
     top: 80%;
+    margin-right: 0;
   }
   .swiper-slide {
     /* border: 1px solid green; */
@@ -1137,6 +1201,7 @@ width 100% height 100vh의 고정값을 줍니다. */
     width: 85%;
     height: 100%;
     top: 80%;
+    margin-right: 0;
   }
   .sec3_right p:nth-of-type(1) {
     padding-top: 0.5rem;
