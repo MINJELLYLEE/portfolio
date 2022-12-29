@@ -673,16 +673,16 @@ width 100% height 100vh의 고정값을 줍니다. */
     left: 73%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .stone {
-    margin-top: 20%;
+    margin-top: 30%;
   }
   #sec1 h1 {
     /* border: 1px solid blue; */
-    top: 15%;
+    top: 25%;
   }
   #sec1 div {
-    top: 0%;
+    top: 5%;
   }
   #sec2 h1 {
     /* border: 1px solid blue; */
@@ -696,36 +696,77 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   #sec2 .btn {
     /* border: 1px solid blue; */
-    right: 5%;
+    right: 10%;
     margin-top: 3%;
+  }
+  #sec2 .btn button {
+    margin-left: 1rem;
+    width: 90px;
+    height: 50px;
   }
   .con1 {
     /* border: 1px solid blue; */
-    margin-top: 13%;
+    margin-top: 18%;
     width: 50%;
     height: 35vh;
     margin-left: 50%;
+  }
+  .con1::before,
+  .con1::after {
+    display: none;
   }
   .con1 p:nth-of-type(1) {
     margin-top: -5%;
+    display: none;
   }
   .con1 p {
-    width: 100%;
+    width: 115%;
     font-size: 12px;
   }
+  .con1 p:nth-of-type(2) {
+    /* border: 1px solid blue; */
+    margin-top: -15%;
+    margin-left: -8%;
+  }
   .sec2_con .con2 {
-    margin-top: 13%;
+    margin-top: 18%;
     width: 50%;
     height: 35vh;
     margin-left: 50%;
+  }
+  .con2 p {
+    /* border: 2px solid red; */
+    line-height: 1.5rem;
+    font-size: 10px;
+    padding-top: 0rem;
+    margin-left: 0%;
+  }
+  .con2 .major {
+    /* border: 1px solid blue; */
+    text-align: left;
+    display: inline-block;
+    margin-left: 32%;
+  }
+  .tec_list div img {
+    margin: 0 0rem;
+    width: 40px;
+    position: relative;
+    z-index: 1;
   }
   #sec3 .inner_con h1 {
     font-size: 30px;
     /* border: 1px solid blue; */
-    padding-top: 20%;
+    padding-top: 10%;
   }
+
   .swiper-slide div img {
     margin-top: -10px;
+    margin-left: 15%;
+  }
+  .sec3_right {
+    width: 85%;
+    height: 65%;
+    top: 80%;
   }
   .sec3_right p:nth-of-type(1) {
     padding-top: 1rem;
@@ -734,41 +775,37 @@ width 100% height 100vh의 고정값을 줍니다. */
   .sec3_right p:nth-of-type(2) {
     /* border: 1px solid blue; */
     line-height: 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 20%;
     font-size: 14px;
   }
   .sec3_btn {
     /* border: 1px solid blue; */
     /* top: 230%; */
-    margin-top: 0%;
-    right: 1.5rem;
+    margin-top: 45%;
+    right: 7rem;
   }
   .pg1 {
     /* border: 1px solid red; */
-    margin-top: 10%;
+    margin-top: 47%;
   }
   #sec4 h1 {
     font-size: 30px;
     padding-top: 10%;
   }
-  .con2 p {
-    /* border: 2px solid red; */
-    line-height: 1.5rem;
-    font-size: 12px;
-    padding-top: 1rem;
+  .contact h2 p {
+    font-size: 20px;
+    line-height: 3rem;
   }
-  .con2 .major {
-    /* border: 1px solid blue; */
-    text-align: left;
-    display: inline-block;
-    margin-left: 33%;
+  .email span:nth-of-type(2),
+  .kakao span:nth-of-type(2),
+  .github span:nth-of-type(2) {
+    width: 130px;
+    height: 100px;
+    font-size: 16px;
   }
-  .tec_list div img {
-    margin: 0 0rem;
-    width: 40px;
-    position: relative;
-    z-index: 1;
+  .kakao span:nth-of-type(2)::before {
+    left: 35%;
   }
 }
 @media (max-width: 600px) {
@@ -799,7 +836,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   /* stone start */
 
   .stone {
-    margin-top: 60%;
+    margin-top: 40%;
     width: 50vw;
     height: 50vw;
   }
@@ -840,8 +877,8 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   #sec2 .btn {
     /* border: 1px solid blue; */
-    right: 23%;
-    margin-top: 70%;
+    right: 30%;
+    margin-top: 68%;
   }
   #sec2 .btn button {
     margin-left: 1rem;
@@ -850,32 +887,33 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .con1 {
     /* border: 1px solid blue; */
-    margin-top: 105%;
+    margin-top: 95%;
     padding: 2rem;
     width: 100%;
-    height: 40vh;
+    height: 25vh;
     margin-left: 0;
   }
   .con1 p {
     /* border: 2px solid red; */
-    width: 123%;
-    font-size: 8px;
+    width: 110%;
+    font-size: 12px;
   }
   .con1 p:nth-of-type(1) {
     margin-top: -14%;
     margin-left: -10%;
+    display: none;
   }
   .con1 p:nth-of-type(2) {
     /* border: 1px solid blue; */
-    margin-top: -3%;
-    margin-left: -10%;
+    margin-top: -7%;
+    margin-left: -5%;
   }
 
   .sec2_con .con2 {
-    margin-top: 105%;
+    margin-top: 95%;
     width: 100%;
     /* height: 430px; */
-    height: 40vh;
+    height: 25vh;
     margin-left: 0;
     padding: 2.5rem 0rem 0;
   }
@@ -889,6 +927,9 @@ width 100% height 100vh의 고정값을 줍니다. */
     font-size: 10px;
     padding-top: 0;
   }
+  .con2 p:nth-of-type(1) {
+    margin-top: -5%;
+  }
   .con2 .major {
     /* border: 1px solid blue; */
     text-align: left;
@@ -897,7 +938,9 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .tec_con {
     /* border: 1px solid blue; */
-    padding-top: 5%;
+    padding-top: 8%;
+    padding-left: 5%;
+    margin-top: -13%;
   }
   .tec_list div img {
     margin: 0 0rem;
@@ -922,7 +965,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .swiper-slide h3 {
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 0;
   }
   .swiper-slide div img {
@@ -932,7 +975,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   .sec3_right {
     /* border: 1px solid red; */
     width: 85%;
-    height: 130%;
+    height: 100%;
     top: 80%;
   }
   .swiper-slide {
@@ -946,15 +989,15 @@ width 100% height 100vh의 고정값을 줍니다. */
   .sec3_right p:nth-of-type(2) {
     /* border: 1px solid blue; */
     line-height: 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 20%;
     font-size: 14px;
   }
   .sec3_btn {
     /* border: 1px solid blue; */
     /* top: 230%; */
-    margin-top: 85%;
-    right: 2.3rem;
+    margin-top: 65%;
+    right: 5.3rem;
   }
   .sec3_btn a {
     width: 80px;
@@ -964,7 +1007,7 @@ width 100% height 100vh의 고정값을 줍니다. */
   }
   .pg1 {
     /* border: 1px solid red; */
-    top: 90%;
+    top: 73%;
     margin-left: -3%;
   }
   /* sec3 end */
@@ -1035,4 +1078,79 @@ width 100% height 100vh의 고정값을 줍니다. */
     left: 70%;
   }
   /* sec4 end */
+}
+
+@media (max-width: 450px) {
+  .stone {
+    margin-top: 60%;
+    width: 50vw;
+    height: 50vw;
+  }
+  #sec1 h1 {
+    /* border: 1px solid blue; */
+    top: 35%;
+  }
+  #sec1 div {
+    top: 20%;
+  }
+  #sec2 .btn {
+    /* border: 1px solid blue; */
+    right: 23%;
+  }
+  .con1 {
+    /* border: 1px solid blue; */
+    margin-top: 110%;
+    height: 30vh;
+  }
+  .con1 p {
+    width: 115%;
+  }
+  .con1 p:nth-of-type(1) {
+    display: none;
+  }
+  .con1 p:nth-of-type(2) {
+    /* border: 1px solid blue; */
+    font-size: 11px;
+    margin-top: -12%;
+    margin-left: -7%;
+  }
+  .sec2_con .con2 {
+    height: 30vh;
+    margin-top: 110%;
+  }
+  .con2 p:nth-of-type(1) {
+    margin-top: -5%;
+  }
+  .tec_con {
+    /* border: 1px solid blue; */
+    padding-left: 30%;
+    margin-top: -13%;
+  }
+  .tec_list div img {
+    width: 35px;
+  }
+  #sec3 .inner_con h1 {
+    margin-top: 15%;
+  }
+  .sec3_right {
+    /* border: 1px solid red; */
+    width: 85%;
+    height: 100%;
+    top: 80%;
+  }
+  .sec3_right p:nth-of-type(1) {
+    padding-top: 0.5rem;
+    font-size: 16px;
+  }
+  .sec3_btn {
+    /* border: 1px solid blue; */
+    /* top: 230%; */
+    margin-top: 65%;
+    right: 2rem;
+  }
+  .pg1 {
+    /* border: 1px solid red; */
+    top: 55%;
+    margin-left: -3%;
+  }
 }
